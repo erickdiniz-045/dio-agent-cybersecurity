@@ -1,148 +1,90 @@
-# 🤖 DIO Agent
+# 🛡️Cybersecurity
 
-> Seu mentor com Inteligência Artificial para aprender mais e melhor na [DIO](https://dio.me).
+**Um agente de inteligência artificial preparado para estudar, investigar e ensinar cibersegurança na prática.**
 
-O **DIO Agent** é um agente de IA que acompanha você na sua jornada de estudos. Ele conhece as experiências da DIO (Bootcamps, Formações, Cursos, Desafios e muito mais) e ajuda você a estudar, praticar e planejar a sua carreira.
+Este projeto nasceu a partir do [DIO Agent original](https://github.com/digitalinnovationone/dio-agent), mas ganhou uma nova direção: transformá-lo em um assistente especializado em **segurança da informação e análise defensiva de vulnerabilidades**.
 
-Você não precisa saber programar nem instalar nada complicado. Em **3 passos**, o seu mentor está pronto para usar.
+A proposta é ir além de simplesmente explicar conceitos. Quero que o agente ajude a entender como as vulnerabilidades surgem, como podem ser identificadas, quais riscos representam e, principalmente, como corrigi-las.
 
----
+## 🎯 O objetivo deste projeto
 
-## ✨ Três palavras para começar
+Desenvolver um agente que funcione como um mentor de cibersegurança, capaz de orientar estudos e análises técnicas de maneira didática, responsável e baseada em evidências.
 
-- 🧠 **Agente de IA:** um chatbot responde perguntas. Um *agente* vai além: lê, planeja e executa passos para ajudar você a alcançar um objetivo. É a diferença entre alguém que explica o caminho e alguém que caminha junto com você.
-- 🖥️ **Harness:** é o programa onde o agente roda. O agente é o mentor, e o harness é a sala onde vocês se encontram. O mesmo mentor atende em salas diferentes, por isso o DIO Agent funciona em vários harnesses.
-- 🧩 **Skill:** é uma habilidade do agente, descrita em um guia passo a passo. Você não precisa chamar a skill: o agente percebe o que você precisa e usa a certa sozinho.
+A especialização contempla três áreas principais:
 
-Esses e outros termos estão no [Glossário](docs/glossary.md).
+- **Segurança de aplicações web:** análise de vulnerabilidades em sites, sistemas, APIs, autenticação e aplicações desenvolvidas em PHP, JavaScript e outras tecnologias.
+- **Segurança de infraestrutura:** fundamentos de redes, servidores Linux, configurações e serviços.
+- **Análise de vulnerabilidades:** identificação de falhas, avaliação de riscos, consulta a referências como CVE e CWE, recomendações de correção e validação dos resultados.
 
----
+## 🔍 Aprender na prática
 
-## 🚀 Comece em 3 passos
+Uma das partes deste projeto é um laboratório local de SQL Injection, criado para demonstrar como uma falha de segurança pode comprometer um processo de autenticação.
 
-### 1️⃣ Instale um harness
+O laboratório possui duas versões:
 
-Recomendamos o **Google Antigravity**, que tem limites de uso generosos para quem está começando. Mas qualquer harness da lista funciona: escolha um e siga a instalação da documentação oficial dele.
+- Uma aplicação vulnerável, utilizada para compreender a falha.
+- Uma aplicação corrigida, que utiliza consultas parametrizadas e armazenamento seguro de senhas.
 
-| Harness | Documentação oficial |
-|---------|----------------------|
-| Google Antigravity (recomendado) | https://antigravity.google/docs |
-| Claude Code | https://code.claude.com/docs |
-| Codex | https://developers.openai.com/codex |
-| OpenCode | https://opencode.ai/docs |
-| Hermes | https://hermes-agent.nousresearch.com/docs |
+A ideia é seguir um ciclo de aprendizado:
 
-### 2️⃣ Baixe o DIO Agent e abra no harness
+**Identificar → Entender → Corrigir → Testar novamente.**
 
-Baixe este repositório do jeito mais simples para você:
+## 🧠 Como o agente trabalha
 
-- **Com Git:** no terminal, rode `git clone https://github.com/digitalinnovationone/dio-agent.git`
-- **Sem Git:** no topo desta página, clique no botão verde **Code**, depois em **Download ZIP**, e extraia a pasta.
+O agente foi configurado para não sair sugerindo testes sem antes entender o cenário. Ele deve considerar autorização, escopo, evidências e possíveis impactos antes de orientar uma análise.
 
-Depois, abra no harness a pasta do projeto, a que tem o arquivo `AGENTS.md` (pelo Git, ela se chama `dio-agent`; pelo .zip, `dio-agent-main`). O harness lê esse arquivo sozinho, e o agente já sabe quem é: o seu mentor de estudos da DIO.
+Mais do que apontar uma falha, deve explicar o problema, demonstrar por que ele importa e apresentar caminhos para sua correção.
 
-### 3️⃣ Converse
-
-Fale naturalmente, com as suas palavras. Nas primeiras vezes, vale usar um dos [modelos de prompt](#-modelos-de-prompt) abaixo: quanto mais contexto você dá, melhor o agente ajuda.
+Este é um projeto de aprendizado e evolução contínua, desenvolvido com foco em cibersegurança defensiva e uso responsável das ferramentas de análise.
 
 ---
 
-## 🧩 As skills do agente
+## 🚀 Conheça o projeto
 
-| Skill | Para que serve | Experimente pedir |
-|-------|----------------|-------------------|
-| [Plano de estudos](skills/study-plan/SKILL.md) | Organiza o que estudar, em que ordem e em quanto tempo | "Quero concluir este Bootcamp em 2 meses, me ajuda?" |
-| [Destravar desafio](skills/unblock-challenge/SKILL.md) | Conduz você até a solução de um desafio, sem dar a resposta pronta | "Travei nesse desafio, me ajuda?" |
-| [Explicar conceito](skills/explain-concept/SKILL.md) | Explica conceitos de forma simples, com analogias e exemplos | "Não entendi o que é uma API." |
-| [Pesquisa na web](skills/web-search/SKILL.md) | Responde dúvidas atuais (versões, lançamentos, mercado) com fontes citadas | "Qual a versão estável do Node hoje?" |
-| [Revisão de portfólio](skills/portfolio-review/SKILL.md) | Dá feedback sobre o seu portfólio e GitHub antes de buscar vagas | "O que falta no meu GitHub para uma vaga júnior?" |
-| [Caminho AI Builder](skills/ai-builder-path/SKILL.md) | Ajuda você a escolher o próximo passo na Carreira AI Builder | "Qual Formação AI Builder combina comigo?" |
+Abaixo estão os principais arquivos e recursos desenvolvidos nesta especialização.******Cybersecurity
 
-A pesquisa na web usa a busca do seu harness. Se ele não tiver busca própria, veja [como conectar o You.com](docs/youcom-mcp.md), que tem uma opção gratuita.
+**Um agente de inteligência artificial preparado para estudar, investigar e ensinar cibersegurança na prática.**
 
----
+Este projeto nasceu a partir do [DIO Agent original](https://github.com/digitalinnovationone/dio-agent), mas ganhou uma nova direção: transformá-lo em um assistente especializado em **segurança da informação e análise defensiva de vulnerabilidades**.
 
-## 📝 Modelos de prompt
+A proposta é ir além de simplesmente explicar conceitos. Quero que o agente ajude a entender como as vulnerabilidades surgem, como podem ser identificadas, quais riscos representam e, principalmente, como corrigi-las.
 
-Copie, preencha o que está entre colchetes e envie. Não precisa de formato perfeito: o agente pede mais detalhes se precisar.
+## 🎯 O objetivo deste projeto
 
-**🗺️ Plano de estudos**
+Desenvolver um agente que funcione como um mentor de cibersegurança, capaz de orientar estudos e análises técnicas de maneira didática, responsável e baseada em evidências.
 
-```
-Quero montar um plano de estudos.
-- Meu objetivo: [ex: ser dev back-end, concluir um Bootcamp]
-- O que quero fazer na DIO: [link ou nome do Bootcamp, Formação, Aceleração ou Carreira]
-- O que já tenho: [um plano de ação ou de estudos, se tiver]
-- Meu nível hoje: [iniciante, intermediário, avançado]
-- Tempo disponível: [ex: 1 hora por dia, de segunda a sexta]
-```
+A especialização contempla três áreas principais:
 
-**🔓 Destravar desafio**
+- **Segurança de aplicações web:** análise de vulnerabilidades em sites, sistemas, APIs, autenticação e aplicações desenvolvidas em PHP, JavaScript e outras tecnologias.
+- **Segurança de infraestrutura:** fundamentos de redes, servidores Linux, configurações e serviços.
+- **Análise de vulnerabilidades:** identificação de falhas, avaliação de riscos, consulta a referências como CVE e CWE, recomendações de correção e validação dos resultados.
 
-```
-Estou travado em um Desafio de [Código, Projeto ou Criativo] da DIO.
-- O que o desafio pede: [cole o enunciado ou, no Desafio de Projeto, o link do repositório do desafio]
-- Onde eu travei: [explique o ponto da dificuldade]
-- Meu código ou repositório: [cole o código ou o link, se tiver]
-Me ajuda a destravar sem dar a resposta pronta.
-```
+## 🔍 Aprender na prática
 
-**💡 Explicar conceito**
+Uma das partes deste projeto é um laboratório local de SQL Injection, criado para demonstrar como uma falha de segurança pode comprometer um processo de autenticação.
 
-```
-Me explica o conceito de [ex: API, laço de repetição, herança].
-- Meu nível: [nunca vi, já ouvi falar, quero aprofundar]
-```
+O laboratório possui duas versões:
 
-**🧭 Caminho AI Builder**
+- Uma aplicação vulnerável, utilizada para compreender a falha.
+- Uma aplicação corrigida, que utiliza consultas parametrizadas e armazenamento seguro de senhas.
 
-```
-Quero escolher meu próximo passo na Carreira AI Builder.
-- O que quero construir com IA: [ex: um produto para o meu negócio, um software, agentes que automatizam processos, ainda não sei]
-- Minha experiência com programação: [nenhuma, o básico, trabalho com desenvolvimento]
-- Meu objetivo: [ex: mudar de carreira, tirar uma ideia do papel]
-```
+A ideia é seguir um ciclo de aprendizado:
+
+**Identificar → Entender → Corrigir → Testar novamente.**
+
+## 🧠 Como o agente trabalha
+
+O agente foi configurado para não sair sugerindo testes sem antes entender o cenário. Ele deve considerar autorização, escopo, evidências e possíveis impactos antes de orientar uma análise.
+
+Mais do que apontar uma falha, deve explicar o problema, demonstrar por que ele importa e apresentar caminhos para sua correção.
+
+Este é um projeto de aprendizado e evolução contínua, desenvolvido com foco em cibersegurança defensiva e uso responsável das ferramentas de análise.
 
 ---
 
-## 🔄 Mantenha o DIO Agent atualizado
+## 🚀 Conheça o projeto
 
-O DIO Agent evolui com o tempo. Se você usou Git, rode `git pull` no terminal, dentro da pasta (ou peça para o próprio agente rodar). Se baixou o .zip, baixe de novo.
-
----
-
-## 🗂️ Estrutura do repositório
-
-```
-dio-agent/
-├── README.md                Este guia
-├── AGENTS.md                Definição do agente (lida pelo harness)
-├── CLAUDE.md                Atalho para o Claude Code
-├── agent/
-│   ├── persona.md           A personalidade e o tom do agente
-│   └── knowledge/           O que o agente sabe sobre a DIO
-├── skills/                  Uma pasta por skill, cada uma com o seu SKILL.md
-└── docs/
-    ├── glossary.md          Glossário de termos
-    └── youcom-mcp.md        Como conectar a busca do You.com
-```
-
----
-
-## 🤝 Contribua
-
-Tem uma ideia de skill? Veja [como criar uma skill](skills/README.md) e abra um pull request.
-
----
-
-## 💬 Sobre este projeto
-
-O DIO Agent foi criado para acompanhar você nos Bootcamps e Formações da DIO. A ideia é simples: aprender na era da IA fica mais fácil quando você tem um mentor disponível a qualquer hora.
-
-Bons estudos, e vem com a gente. 🚀
-
----
-
+Abaixo estão os principais arquivos e recursos desenvolvidos nesta especialização.
 ## 🛡️ Especialização em Cibersegurança
 
 O DIO Agent possui uma especialização em análise defensiva de vulnerabilidades, com foco em aplicações web, APIs, redes, Linux e infraestrutura.

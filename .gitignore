@@ -1,0 +1,26 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos locais do harness
+.claude/settings.local.json
+.antigravity/
+*.local
+
+# Logs e temporÃ¡rios
+*.log
+.tmp/
+
+# Bancos de dados locais de laboratório
+*.db
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Ambientes e arquivos temporários
+.env
